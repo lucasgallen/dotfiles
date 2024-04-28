@@ -1,0 +1,8 @@
+[user]
+	email = lucas.g.allen@gmail.com
+	name = Lucas Allen
+
+[core]
+  editor = vim
+[init]
+	defaultBranch = main
