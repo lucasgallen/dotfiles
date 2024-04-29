@@ -10,4 +10,5 @@ Obviously, to keep the dotfiles tracked and version controlled, we use Git
 
 ## CLI Tools
 
-- fzf
+- fzf [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+- fd [https://github.com/sharkdp/fd](https://github.com/sharkdp/fd)
