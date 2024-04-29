@@ -105,16 +105,6 @@ alias rserver="rails server -u webrick"
 alias 11ty="npx eleventy"
 alias chrome="google-chrome-stable"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
- 
-# Prevent diluge of experimental/depricated warnings in Rails 6 + Ruby 2.7.0 setup
-#export RUBYOPT='-W:no-deprecated -W:no-experimental'
-
-# WordPress CLI Autocomplete
-autoload bashcompinit
-bashcompinit
-
 source $ZSH/oh-my-zsh.sh
 
 # The next line updates PATH for Netlify's Git Credential Helper.
