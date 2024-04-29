@@ -117,9 +117,6 @@ bashcompinit
 
 source $ZSH/oh-my-zsh.sh
 
-#PROMPT='%{$fg[blue]%}%m%{$reset_color%}%{$fg_bold[white]%} ॐ %{$reset_color%}%{$fg[cyan]%}%1~:%{$reset_color%}$(git_time_since_commit)$(git_prompt_info)
-#%{$fg[red]%}%!%{$reset_color%} $(prompt_char) '
-
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/home/lucas/.config/netlify/helper/path.zsh.inc' && source '/home/lucas/.config/netlify/helper/path.zsh.inc'
 
