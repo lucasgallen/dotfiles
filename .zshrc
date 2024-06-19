@@ -8,6 +8,7 @@ fi
 LUCAS=/mnt/c/Users/lucas
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" # kubectl krew; plugin to manage other kubernetes plugins
 export PATH="/home/lucas/.local/bin:$PATH"
+export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 
 export GAME_DEV_DIR=/mnt/c/Users/lucas/Game\ Projects/
 
@@ -46,6 +47,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # setup fzf keybindings and fuzzy completion
 eval "$(fzf --zsh)"
+
+# tmuxifier
+eval "$(tmuxifier init -)"
+export EDITOR='nvim'
 
 # -- use fd instead of fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
