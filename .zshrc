@@ -65,6 +65,9 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
+export FZF_CTRL_T_OPTS="--preview 'batcat -n --color=always --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
 # Bat (better cat)
 alias bat="batcat"
 
