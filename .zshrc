@@ -26,6 +26,7 @@ export ZSH="/home/lucas/.oh-my-zsh"
 alias rserver="rails server -u webrick"
 alias 11ty="npx eleventy"
 alias chrome="google-chrome-stable"
+alias bat="batcat"
 
 source $ZSH/oh-my-zsh.sh
 
