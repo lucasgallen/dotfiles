@@ -1,0 +1,6 @@
+- fzf (fuzzy file search fnality)
+- bat (better cat)
+- eza (better ls)
+- tlrc (tldr client in rust; faster/more shallow man pages)
+- thefuck (correct cli typos)
+- zoxide (better cd)
