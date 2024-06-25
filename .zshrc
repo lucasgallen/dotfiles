@@ -26,7 +26,6 @@ export ZSH="/home/lucas/.oh-my-zsh"
 alias rserver="rails server -u webrick"
 alias 11ty="npx eleventy"
 alias chrome="google-chrome-stable"
-alias bat="batcat"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,6 +64,13 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
+
+# Bat (better cat)
+alias bat="batcat"
+
+# Eza (better ls)
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
