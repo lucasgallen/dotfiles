@@ -74,6 +74,9 @@ alias bat="batcat"
 # Eza (better ls)
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
 
+# thef*ck
+eval $(thefuck --alias)
+eval $(thefuck --alias fk)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
