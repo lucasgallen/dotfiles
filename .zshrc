@@ -9,8 +9,11 @@ LUCAS=/mnt/c/Users/lucas
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" # kubectl krew; plugin to manage other kubernetes plugins
 export PATH="/home/lucas/.local/bin:$PATH"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
+export PATH="/usr/local/bin/migrate:$PATH"
 
 export GAME_DEV_DIR=/mnt/c/Users/lucas/Game\ Projects/
+
+export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -64,6 +67,7 @@ setopt appendHistory
 # tmuxifier
 eval "$(tmuxifier init -)"
 export EDITOR='nvim'
+alias tmfy="tmuxifier s"
 
 # -- use fd instead of fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
@@ -86,6 +90,8 @@ alias bat="batcat"
 
 # Eza (better ls)
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -a"
+# (Old) ls
+alias ols="ls"
 
 # thef*ck
 eval $(thefuck --alias)
@@ -100,3 +106,6 @@ alias cd="z"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
