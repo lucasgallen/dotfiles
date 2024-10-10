@@ -4,3 +4,4 @@
 --
 
 vim.keymap.set("n", "<leader>z", ":Lazy <CR>")
+vim.keymap.set("n", "<leader>fu", ":UndotreeToggle <CR>")

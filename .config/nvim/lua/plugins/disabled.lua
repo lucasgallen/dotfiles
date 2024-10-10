@@ -1,5 +1,5 @@
 return {
-  { "rcarriga/nvim-notify", enabled = false },
+  -- { "rcarriga/nvim-notify", enabled = false },
   {
     "mfussenegger/nvim-lint",
     opts = {
