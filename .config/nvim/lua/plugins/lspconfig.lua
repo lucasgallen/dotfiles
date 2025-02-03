@@ -4,8 +4,5 @@ return {
     inlay_hints = {
       enabled = false,
     },
-    servers = {
-      vtsls = false,
-    },
   },
 }

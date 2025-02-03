@@ -1,6 +1,7 @@
 [user]
 	email = lucas.g.allen@gmail.com
 	name = Lucas Allen
+	useconfigonly = true
 
 [core]
   editor = vim
