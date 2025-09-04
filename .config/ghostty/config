@@ -1,0 +1,4 @@
+gtk-titlebar-hide-when-maximized = true
+window-decoration = none
+gtk-titlebar = false
+confirm-close-surface = false

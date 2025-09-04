@@ -5,10 +5,11 @@
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" # kubectl krew; plugin to manage other kubernetes plugins
+# export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" # kubectl krew; plugin to manage other kubernetes plugins
 export PATH="/home/lucas/.local/bin:$PATH"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 export PATH="/usr/local/bin/migrate:$PATH"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export BROWSER="firefox"
 
@@ -21,9 +22,9 @@ export BROWSER="firefox"
 plugins=(git vi-mode nvm npm)
 
 # Path to your oh-my-zsh installation.
-export ZSH="/usr/share/oh-my-zsh"
+# export ZSH="/usr/share/oh-my-zsh"
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/home/lucas/.config/netlify/helper/path.zsh.inc' && source '/home/lucas/.config/netlify/helper/path.zsh.inc'
@@ -100,6 +101,7 @@ alias cd="z"
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
 
+autoload -Uz compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 
