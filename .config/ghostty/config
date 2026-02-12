@@ -2,3 +2,7 @@ gtk-titlebar-hide-when-maximized = true
 window-decoration = none
 gtk-titlebar = false
 confirm-close-surface = false
+
+command = /bin/zsh -l -i
+
+keybind = ctrl+shift+v=paste_from_clipboard
