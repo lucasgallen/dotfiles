@@ -128,4 +128,4 @@ alias pmid='ceiling_divide $LINES 2; clear_rows $ceiling_result'
 alias pdown='ceiling_divide $((3*LINES)) 4; clear_rows $ceiling_result'
 
 eval "$(starship init zsh)"
-neofetch
+fastfetch
