@@ -9,7 +9,6 @@
 export PATH="/home/lucas/.local/bin:$PATH"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 export PATH="/usr/local/bin/migrate:$PATH"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export BROWSER="firefox"
 
