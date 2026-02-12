@@ -19,6 +19,7 @@ export BROWSER="firefox"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git vi-mode nvm npm)
+bindkey -v
 
 # Path to your oh-my-zsh installation.
 # export ZSH="/usr/share/oh-my-zsh"
