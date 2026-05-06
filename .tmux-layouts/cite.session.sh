@@ -32,7 +32,7 @@ if initialize_session "cite"; then
   run_cmd "npm run terra:out terraform/dev"
 
   select_window 3
-  run_cmd "sudo npm run db:start && npm run db:seed:dev"
+  run_cmd "npm run db:start && npm run db:seed:dev"
 fi
 
 # Finalize session creation and switch/attach to it.
